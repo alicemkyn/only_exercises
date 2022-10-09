@@ -1143,4 +1143,24 @@
 #         flatted_list[k]={j,i}
 # print(flatted)
 # print(flatted_list)
-        
+
+
+# trLetters = "abcdefgğhıijklmnoöprsştuüvyz"
+# transTrLetters = {i:(trLetters.index(i) + 1) for i in trLetters}
+# print(sorted("afgdhkıi", key = transTrLetters.get))
+
+
+# fruit = "apple"
+# fruit = "A" + fruit[1:]
+
+
+# site1 = "www.google.com"
+# site2 = "www.istihza.com"
+# site3 = "www.gnu.com"
+# site4 = "www.yahoo.com"
+
+# for i in site1,site2,site3,site4:
+#     print("http://",i[4:],sep="")
+
+
+import os; print(os.getcwd())
