@@ -1475,3 +1475,53 @@
 #             groupped[value].append(key)
 #     return groupped
 # print(group_by_owner(files))
+
+
+
+##Problem 64
+
+# inp = [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
+
+# def is_flatten(container):
+#     for i in container:
+#         if isinstance(i, (list,tuple)):
+#                 for j in is_flatten(i):
+#                     yield j
+#         else:
+#             yield i
+# print(list(is_flatten(inp)))
+
+####### ONE LINER #######
+# fl = list()
+# def flatten(container):
+#     [flatten(i) if isinstance(i,(list,tuple)) else fl.append(i) for i in container]
+
+# inp = [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
+# flatten(inp)
+# print(fl)
+
+
+
+##Problem 65
+# input = [[1, 2], [3, 4], [5, 6, 7],3]
+
+# def is_rev(n):
+#     for i in n:
+#         if isinstance(i,list):
+#             n[n.index(i)] = i[::-1]
+#         else:
+#             pass
+#     return n[::-1]
+# print(is_rev(input))
+
+
+# ##### ONE LINER ##### #Maybe
+# input = [[1, 2], [3, 4], [5, 6, 7]]
+
+# def reverse(mylist):
+#     mylist=mylist[::-1]
+
+#     reverselist = [mylist[i][::-1] for i in range(len(mylist)) ]
+#     return reverselist
+
+# print(reverse(input))

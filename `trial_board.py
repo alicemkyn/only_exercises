@@ -1164,3 +1164,42 @@
 
 
 # import os; print(os.getcwd())
+
+
+# x=7
+# def f(x):
+#   res=5
+#   res*=res
+#   if x%2==0:
+#     print("Sonuc:",res)
+#     return res
+#   else:
+#     print("Sonuc: ",res)
+  
+#     return res+10
+# print(f(4))
+
+
+# def f(x):
+#     """bu fonksiyon parametlerin toplamini return eder.
+
+#     Args:
+#         x (int ): _description_
+#     """
+#     return x+x
+# help(f)
+
+
+
+# def consecutive(n):
+#     """verilen n degerini n degeride dahil olmak uzere
+#     yanyana bosluksuz dizip print eder.
+
+#     Args:
+#         n (int): range degerinde son aralik(inc)
+#     """
+#     print(*range(1,(n+1)),sep="")
+    
+# consecutive(12) 
+
+
