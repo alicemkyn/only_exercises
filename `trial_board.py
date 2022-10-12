@@ -1231,11 +1231,21 @@
 #             break
 
 
-# def is_prime(*x):
-#     for i in x:
-
 # a =[1,23,5,5,"essealmi"]
 # for i in a:
 #     if isinstance(i,(str)):
 #         b = *i, 
 # print(b)
+
+
+def is_prime(x):
+    for i in x:
+        for j in range(2,i+1):
+            if i%j == 0:
+                if i == j:
+                    print(i)
+                break
+
+z = [*range(101)]
+print(is_prime(z))
+
