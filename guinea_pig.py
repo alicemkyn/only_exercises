@@ -1259,10 +1259,10 @@
 #     raise TypeError (f"Burasi TypeError buda ZeroDivision Error hatasi:{err}") from err #bu hata olustugu icin bu hataya direct edildi print eder
 
 
-##### Assert #######
-a = input("sayi girin:\v")
-assert len(a) != 0, "a is empty"
-print(int(a)*12)
-b = input("isim girin")
-assert isinstance(b,int), "b string"
-print(b*12)
+# ##### Assert #######
+# a = input("sayi girin:\v")
+# assert len(a) != 0, "a is empty"
+# print(int(a)*12)
+# b = input("isim girin")
+# assert isinstance(b,int), "b string"
+# print(b*12)
