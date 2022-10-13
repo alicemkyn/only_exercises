@@ -1266,3 +1266,129 @@
 # b = input("isim girin")
 # assert isinstance(b,int), "b string"
 # print(b*12)
+
+
+
+# mailler={"kisi1":"ad1.soyad1@gmail.com","kisi2":"ad2.soyad2@gmail.com","kisi3":"ad3.soyad3@gmail.com"}
+# l = []
+# for v in mailler.values():
+#     l.append(v)
+# print(l)
+# l = ",".join(l)
+# print(l);print(type(l))
+
+
+# a=20
+
+# b=a
+
+# a=a+5
+
+# l=[20,30,40]
+
+# l2=l
+
+# l[0]=l[0]+5
+
+# print(b,l2[0])
+
+
+# def f(x,y=True):
+#     if x%2 == 0:
+#         y= False
+#         return y
+#     return y
+
+# print(f(6,True))
+
+# for i in range(1,101):
+#     for j in range(2,i+1):
+#         if i % j == 0:
+#             if i == j:
+#                 print(i)
+#             break
+
+
+# a = b= 1
+# l = [a,b]
+# for _ in range(1,123131231312313):
+#     a,b = b,b+a
+#     l.append(b)
+# print(l)
+
+
+#####################
+# metin = "Bfjflrk öa kdhsı yteua idjslyd bdcusldvdj ks?"
+
+# q_key = "qwertyuıopğüasdfghjklşi,zxcvbnmöç."
+# f_key = "fgğıodrnhpqwuieaütkmlyşxjövcçzsb.,"
+
+# trns = str.maketrans(q_key,f_key)
+
+# # for i, j in trns.items():
+# #     print(chr(i),chr(j))
+
+# print(metin.translate(trns))
+########################
+
+# metin = """Bu programlama dili Guido Van Rossum adlı Hollandalı bir
+# programcı tarafından 90'lı yılların başında geliştirilmeye başlanmıştır.
+# Çoğu insan, isminin Python olmasına bakarak, bu programlama dilinin, adını
+# piton yılanından aldığını düşünür. Ancak zannedildiğinin aksine bu
+# programlama dilinin adı piton yılanından gelmez. Guido Van Rossum bu
+# programlama dilini, The Monty Python adlı bir İngiliz komedi grubunun, Monty
+# Python's Flying Circus adlı gösterisinden esinlenerek adlandırmıştır. Ancak
+# her ne kadar gerçek böyle olsa da, Python programlama dilinin pek çok yerde
+# bir yılan figürü ile temsil edilmesi neredeyse bir gelenek halini almıştır
+# diyebiliriz."""
+
+# silinecek = "aeıioöuüAEIİOÖUÜ"
+
+# # çeviri_tablosu = str.maketrans(silinecek,'_'*len(silinecek))
+# # ceviri_tablosu_2 = str.maketrans('','',silinecek)
+
+# # print(metin.translate(çeviri_tablosu))
+# # print(metin.translate(ceviri_tablosu_2))
+
+# newStr =""
+# for i in metin:
+#     if i not in silinecek:
+#         newStr += i
+# print(newStr)
+#############################################
+
+# a = "Besiktas Jimnastik Klubu"
+# b = "".join(i for i in a if i.isalpha()).lower()
+# print(b)
+# ########################################
+
+# print("cilek".encode("cp1254"))
+#########
+
+#Perfect
+
+# def isPerfect(x):
+#     """Sayiyi boldugunde sifir kalani veren kendine kadar olan sayilarin toplami eger sayinin kendine esitse bu fonksiyon True doner
+
+#     Args:
+#         x (int): 1,x
+
+#     Returns:
+#         str: Perfect or Not
+#     """
+#     tot = 0
+#     for i in range(1,x):
+#         if x % i == 0:
+#             tot += i 
+#     if tot == x:
+#         return(f"{x} is a Perfect Number")
+#     return (f"{x} is not a Perfect Number")
+# print(isPerfect(7))
+
+
+# for i in range(1,1000):
+#     for j in range(2,i+1):
+#         if i%j == 0 :
+#             if i==j:
+#                 print(i)
+#             break
