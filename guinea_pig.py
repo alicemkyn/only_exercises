@@ -1468,14 +1468,22 @@
 
 
 #######################################
-def decorator(func):
-    def wrapper():
-        print(f"name of the function is {func.__name__}")
-        return func()
-    return wrapper
+# def decorator(func):
+#     def wrapper():
+#         print(f"name of the function is {func.__name__}")
+#         return func()
+#     return wrapper
 
-@decorator
-def hi():
-    print("hello")
+# @decorator
+# def hi():
+#     print("hello")
 
-hi()
+# hi()
+
+#######################CLOSURE
+# def outer():
+#     msg = "hello world!" ## enclosing scope
+#     def inner():
+#         print(msg) ## local scope
+#     return inner()
+# outer()
