@@ -1385,10 +1385,83 @@
 #     return (f"{x} is not a Perfect Number")
 # print(isPerfect(7))
 
-
+################################
 # for i in range(1,1000):
 #     for j in range(2,i+1):
 #         if i%j == 0 :
 #             if i==j:
 #                 print(i)
 #             break
+
+
+######################################
+# import random
+# *a,= "deneme123"
+# b = tuple(a)
+# print(a)
+# print(b)
+# random.shuffle(a)
+# print(a)
+######################################
+
+# import random
+# *a, = "deneme123"
+# for i in range(len(a)-1,0,-1):
+#     j = random.randint(0,i+1)
+#     a[i],a[j] = a[j],a[i]
+# print("Shuffled list is:",a)
+
+####################################
+
+# def iteleme(kaca_kadar):#1 kaliyor 2 list.remove
+#     """
+#     Halkadaki son numarayi yazin.1 den baslayip 2 yi egale edecek sekilde halka
+#     verdiginiz son numaraya gore son 1 elemani kalacak sekilde sonlanacaktir.
+#     Bu fonksiyon size listede kalan son kahramani gosterecektir.
+#     """
+#     liste = [*range(1,kaca_kadar)]
+#     while len(liste) > 1:
+#         last_item = liste[-1]
+#         for i in liste[1::2]:
+#             liste.remove(i)
+#         if last_item in liste:
+#             liste.pop(0)
+#     return int(str(*liste))
+
+# print(iteleme(40))
+
+###############################
+# li = [*range(1,1001)]
+# while len(li) > 1 :
+#     last_item = li[-1]
+#     li = li[1::2]
+#     if last_item not in li:
+#         li.remove(li[1])
+# print(li)
+
+###################################
+# def real_iteleme(kaca_kadar):
+#     li = [*range(1,kaca_kadar)]
+#     while 1 > len(li):
+#         last_item = li[-1]
+#         li = li[1::2]
+#         if last_item not in li:
+#             li.remove(li[1])
+#     return li
+
+# print(real_iteleme(11))
+#######################################
+# import random
+# *a, = "deneme123"
+# b = list(a) #or
+# b = a[:]
+# for _ in range(1,10):
+#     for i in range(len(a)-1,0,-1):
+#         j = random.randint(0,i+1)
+#         a[i],a[j] = a[j],a[i]
+#     for i in b:
+#         if i not in a:
+#             raise Exception("missing word")
+    
+#     print("Shuffled list is:",a)
+# print(b)
