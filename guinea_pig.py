@@ -1465,3 +1465,17 @@
     
 #     print("Shuffled list is:",a)
 # print(b)
+
+
+#######################################
+def decorator(func):
+    def wrapper():
+        print(f"name of the function is {func.__name__}")
+        return func()
+    return wrapper
+
+@decorator
+def hi():
+    print("hello")
+
+hi()
