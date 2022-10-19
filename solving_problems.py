@@ -1525,3 +1525,69 @@
 #     return reverselist
 
 # print(reverse(input))
+
+
+# #Problem 66
+# liste1 = [[1, 2, 3],
+# [4, 5, 6],
+# [7, 8, 9],
+# [10, 11, 12],
+# [13, 14, 15],
+# [16, 17, 18],
+# [19, 20, 21],
+# [22, 23, 24],
+# [25, 26, 27],
+# [28, 29, 30],
+# [31, 32, 33]]
+
+# liste2 = [1, 27, 88, 98, 50, 9, 28, 45, 54, 66, 61, 23, 10, 33,
+# 22, 12, 6, 99, 63, 26, 87, 25, 77, 5, 16, 93, 99, 44,
+# 59, 69, 34, 10, 60, 92, 61, 44, 5, 3, 23, 99, 79, 51,
+# 89, 63, 53, 31, 76, 41, 49, 10, 88, 63, 55, 43, 40, 71,
+# 16, 49, 78, 41, 35, 97, 33, 76, 25, 81, 15, 99, 64, 20,
+# 33, 6, 89, 81, 44, 53, 59, 75, 27, 15, 64, 36, 72, 78,
+# 34, 36, 20, 41, 41, 75, 56, 30, 86, 46, 9, 42, 21, 64,
+# 26, 52, 77, 65, 64, 12, 38, 1, 35, 20, 73, 71, 37, 35,
+# 72, 38, 100, 52, 16, 49, 79]
+
+# #1 soru Cozum
+# li3 =list()
+# li4 = []
+# for i in liste2:
+#     li4.append(i)
+#     if len(li4) == 3:
+#         li3.append(li4[:])
+#         del li4[:]
+# print(li3)
+# ##Extra
+# import random
+# random.shuffle(li3)
+# print(li3)
+
+# #2 soru Cozum
+# for i in liste1:
+#     ortak = [j for j in i if j in liste2]
+#     if len(ortak) == len(i):
+#         print(i)
+
+
+# #Problem 67 
+# import sys
+# for i in range(10,-1,-1):
+#     print(i , sep = "-", end = "-", file = sys.stdout,flush=True)
+# for i in range(10,1,-2):
+#     print(i)
+    
+    
+#Problem 68 
+# a = 123
+# b = "foo"
+# c = "bar"
+# print(dir())
+
+# for i in dir():
+#     if i.startswith("__") and i.endswith("__"):
+#         continue ##devam et asagi gecme (eger pass koysaydik code flowa gore if kosulu saglansa bile asagidaki kodu calistirip __ ile baslayan ve __ ile biten tum variable lari silecekti)
+#     del globals()[i]
+#     del i
+# print(dir())
