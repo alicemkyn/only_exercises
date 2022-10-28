@@ -941,7 +941,7 @@
 
 ##### 2 WAY
 # liste = []
-# for i in srt:
+# for i in srt:p
 #     if i == "0":
 #         liste.append(i)
 # print(len(liste))
