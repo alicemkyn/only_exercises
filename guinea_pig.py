@@ -1529,7 +1529,39 @@
 #         print(i)
 
 #####################
-lst = [1,1,2,3,3,3,4,5,5]
-lst2 = [i for i in lst if i not in lst2]
+# lst = [1,1,2,3,3,3,4,5,5]
+# lst2 = [i for i in lst if i not in lst2]
 
-print(lst2)
+# print(lst2)
+
+
+##############################
+# liste = ["alfred","toledo","tayfun","abc","cda","sa"]
+# liste2 = ["dene","me","123"]
+# # print(list(map(lambda x : x.upper(),liste)))
+# # print(list(filter(lambda x:len(x)<5,liste)))
+# # print(list(enumerate(liste)))
+# print(list(zip(liste[::-1],liste2)))
+# print(list(map(str.upper,liste)))
+
+###############################
+# for i in range(10,-1,-1):
+#     print(i)
+
+#############################
+# def is_prime(x):
+#     """prime number finder 
+
+#     Args:
+#         x (list): returns list of prime number back
+#     """
+#     ls = list()
+#     for i in x:
+#         for j in range(2,i+1):
+#             if i%j == 0:
+#                 if i == j:
+#                     ls.append(i)
+#                 break
+#     return ls
+
+# print(is_prime([*range(101)]))
