@@ -1565,3 +1565,73 @@
 #     return ls
 
 # print(is_prime([*range(101)]))
+# ls = [(3,4),(10,3),(5,6),(1,9)]
+
+# def rect_area(liste):
+#     ls1 = [i*j for i,j in liste]
+#     return ls1
+
+# print(rect_area(ls))
+# ls = [(3,4),(10,3),(5,6),(1,9)]
+# print(list(map(lambda x : x[0]*x[1], ls)))
+
+
+
+# files = {
+# 'Input.txt': 'Randy',
+# 'Code.py': 'Stan',
+# 'Output.txt': 'Randy'
+# }
+
+# {'Stan': ['Code.py'], 'Randy': ['Output.txt', 'Input.txt']} # Ouput
+
+# def func(files):
+#     dic = {}
+#     for key,value in files.items():
+#         if value in dic:
+#             dic[value].append(key)
+#         else:
+#             dic[value] = [key]
+#     return print(dic)
+
+# func(files)
+
+# #Problem 63
+
+
+# iterate multiple lists simultaneously
+''' import itertools
+
+num = [1,2,3]
+color= ['red','white', 'black']
+value = [255,256]
+
+for i,j,k in zip(num,color,value): # zip()function stops when anyone of the list of all the lists gets exhausted.
+    print(i,j,k) # will return 1 red 255; 2 white 256
+
+
+for i,j,k in itertools.zip_longest(num,color,value): # stops when all lists are exhausted.When shorter iterators are exhausted,zip_longest yields a tuple with None value.
+    print(i,j,k) # will return 1 red 255; 2 white 256; 3 black None
+
+for i,j,k in itertools.zip_longest(num,value,color,fillvalue=-4444):# instead of None there will be fillvalue
+    print(i,j,k) # will return 1 255 red; 2 256 white; 3 -4444 black '''
+    
+    
+# lst = [1,2,3,4,'a',"bc"]
+# a = enumerate(lst,1)
+# i = iter(a)
+# for _ in range(len(lst)): # _convention (ortak agiz)
+#     print(next(i))
+
+''' a = 123
+b = "foo"
+c = "bar"
+print(dir())
+
+for i in dir():
+    if i.startswith("__") and i.endswith("__"):
+        continue ##devam et asagi gecme (eger pass koysaydik code flowa gore if kosulu saglansa bile asagidaki kodu calistirip __ ile baslayan ve __ ile biten tum variable lari silecekti)
+    del globals()[i]
+del i
+print(dir())
+ '''
