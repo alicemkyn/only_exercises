@@ -8,15 +8,14 @@
 #         print(i)
 
 
-
 # for i in range(1,1001):
 #     total = 0
 #     for j in range(1,i):
 #         if i % j == 0:
 #             total += j
 #     if total == i:
-#         print(i ,"is perfect")        
-    
+#         print(i ,"is perfect")
+
 # # Problem 2
 # for i in range(1,10000):
 #     chcker = 0
@@ -35,7 +34,7 @@
 # for i in range(1,10000):
 #     b = str(i)
 #     total = 0
-#     reali = i  
+#     reali = i
 #     while i > 0:
 #         total += (i % 10) ** len(b)
 #         i //= 10
@@ -53,9 +52,9 @@
 #         print(f"{i} x {j} = {i*j}")
 
 
-## Problem 4
+# Problem 4
 
-# total = 0 
+# total = 0
 # while True:
 #     a = input("sayi girin:  yada cikin q veya Q")
 #     if a == "q" or a == "Q":
@@ -76,16 +75,12 @@
 #         total += int(a)
 
 
-
-
-
 # # Problem 5
 # for i in range (1,1001):
 #     if i % 2 == 0:
 #         continue
 #     else:
 #         print(i)
-
 
 
 # for i in range(1,101):
@@ -123,7 +118,6 @@
 # print(listtek,listcift)
 
 
-
 # Problem 8
 
 # for i in range(1,101):
@@ -153,10 +147,10 @@
 # total = 1
 # for i in range(1,101):
 #     total *= i
-# print(total)   
+# print(total)
 
-    
-#Problem 10
+
+# Problem 10
 
 # a = 1
 # b = 1
@@ -211,8 +205,8 @@
 #     liste.extend(a,b,c) #extend ise multi arguman alir ve ikinci parantezlere gerek kalmaz.o yuzden appendeki 3 lu tek bir tuple argumani olusturdugu icin 3 u tek iterable olur ama extende 3 ayri iterable olusur.
 #     liste.sort()
 #     print(liste[-1])
-    
-    
+
+
 # while True:
 #     c =int (input("deger girin"))
 #     b =int (input("deger girin"))
@@ -226,15 +220,15 @@
 # listeee = []
 # while True:
 #     a = input("sayi girin:   veya cikmak ve en buyuk girdiginiz sayiyi gormek icin q ya basin")
-    
+
 #     if a == "q" or a == "Q":
 #         listeee.sort()
 #         print(listeee[-1])
 #         break
 #     else:
 #         listeee.append(a)
-        
-        
+
+
 # Problem 28
 # def perfect():
 #     for i in range(1,1000):
@@ -262,7 +256,7 @@
 # def even(number):
 #     if not(number % 2):
 #         return number
-    
+
 # lst = [even(i) for i in range(1,100) if even(i) and i>20]
 # print(lst[:])
 
@@ -270,76 +264,71 @@
 # while len(liste) > 1:
 #     j = liste[-1] #eger listenin son elemani listeden atilmiyorsa dongu basa dondugunde ilk eleman atilmalidir
 #     for i in liste[1::2]:
-#         liste.remove(i)   
-#     if j in liste: 
-#         liste.pop(0)     
+#         liste.remove(i)
+#     if j in liste:
+#         liste.pop(0)
 # print(liste)
 
 
-
-#Problem 39 Luhn's Algorithm
+# Problem 39 Luhn's Algorithm
 # Python3 program to implement
 # Luhn algorithm
- 
+
 # Returns true if given card
 # number is valid
 
-#From internet we got the code to try Luhn's algorithm ####Decomment the lines below from here:####
+# From internet we got the code to try Luhn's algorithm ####Decomment the lines below from here:####
 
 # def checkLuhn(cardNo):
-     
+
 #     nDigits = len(cardNo)
 #     nSum = 0
 #     isSecond = False
-     
+
 #     for i in range(nDigits - 1, -1, -1):
 #         d = ord(cardNo[i]) - ord('0')
-     
+
 #         if (isSecond == True):
 #             d = d * 2
-  
+
 #         # We add two digits to handle
 #         # cases that make two digits after
 #         # doubling
 #         nSum += d // 10
 #         nSum += d % 10
-  
+
 #         isSecond = not isSecond
-     
+
 #     if (nSum % 10 == 0):
 #         return True
 #     else:
 #         return False
- 
-# # Driver code  
+
+# # Driver code
 # if __name__=="__main__":
-     
+
 #     cardNo = "4583188157394473"
-     
+
 #     if (checkLuhn(cardNo)):
 #         print("This is a valid card")
 #     else:
 #         print("This is not a valid card")
 
 
-
-#### determining multi intervals with angular brackets never did it before....
+# determining multi intervals with angular brackets never did it before....
 # a = int(3)
 
 # if 0 < a <4:
 #     print("well done")
 # else:
 #     raise ValueError
-    
-###Generator CC no
+
+# Generator CC no
 # def cclencheck(ccno):
 #     try:
-        
+
 #     strccno = str(ccno)
 #     if len(ccno) == 16:
-
-
-
 
 
 ###### CC VALIDITY CHECKER ########
@@ -350,27 +339,27 @@
 
 # Weight pattern is 2-1-2-1-2-1-2-1...
 # Should be 16 digits
-# [::2]*2 and [1::2]*1 if result > 10 while multiplication then twodigit % 10 and twodigit//10 sum the results 
-# if multiplication result > 10 then twodigit % 10 and twodigit//10 sum the results 
+# [::2]*2 and [1::2]*1 if result > 10 while multiplication then twodigit % 10 and twodigit//10 sum the results
+# if multiplication result > 10 then twodigit % 10 and twodigit//10 sum the results
 # Sum of the last generated 16 digit list should be divisible by ten. So last digit of sum should be zero
 # Randomly create number in interval of IIN checking method
 
 
-#Function list
+# Function list
 # ccnumber lenght check if it is 16 or not
-# Weight pattern calculator and making list put of it 
+# Weight pattern calculator and making list put of it
 # Sum of the list calculator and mod 10 checker
 # IIN checker:
-    # American Express: 34, 37
-    # Discover Card: 6011, 622126 to 622925, 624000 to 626999, 628200 to 628899, 64, 65
-    # Mastercard: 2221 to 2720, 51 to 55
-    # Visa: 4
+# American Express: 34, 37
+# Discover Card: 6011, 622126 to 622925, 624000 to 626999, 628200 to 628899, 64, 65
+# Mastercard: 2221 to 2720, 51 to 55
+# Visa: 4
 # Randomly create number in interval of IIN checking method .randint
 
 
 ##### Generator ######
 # def randomIIN():#Issuer Identification Number
-#     """This function generates 16 digit numbers within specificly 
+#     """This function generates 16 digit numbers within specificly
 #     determined intervals.
 
 #     Returns:
@@ -445,7 +434,7 @@
 #                 return i,"is Discover card"
 
 
-# for i in range(1,101): 
+# for i in range(1,101):
 #     print(w_pattern(*chklen(*randomIIN())))
 
 
@@ -467,7 +456,7 @@
 # Should be 11 digits(first 9 digit is original digit + 2 last digit is checksum)
 # 0 cant be the x[0]
 # random.randint 9 digit number > convert to str > iterate for int
-#((sum of 1,3,5,7,9 digits )* 7) - (sum of 2,4,6,8 digits) % 10 = 10th digit- i in x[::2] -- i in x[1::2]
+# ((sum of 1,3,5,7,9 digits )* 7) - (sum of 2,4,6,8 digits) % 10 = 10th digit- i in x[::2] -- i in x[1::2]
 # Sum of every digit 1...+10= % 10 is 11th digit
 # Ataturk's tcn= 100000001+cheksum digits
 
@@ -557,13 +546,10 @@
 # for i in lst:
 #     for j in i:
 #         new_lst.append(j)
-# print(new_lst)      
+# print(new_lst)
 
 
-
-
-
-#Problem 44
+# Problem 44
 # Remove the duplicates and print as list
 # lst = [1,1,2,3,3,3,4,5,5]
 
@@ -592,7 +578,6 @@
 # print(sett)
 # lst = [x for x in sett]
 # print(lst)
-
 
 
 # lst = [1,1,2,3,3,3,4,5,5]
@@ -624,7 +609,7 @@
 #         for j in numbers:
 #             if i * j == 20:
 #                 return i ,j
-            
+
 # print(multiplyArray(lst))
 
 
@@ -643,7 +628,7 @@
 #         c = ((i**2) + (j**2)) ** 0.5
 #         if c == int(c):
 #             print((i,j,int(c)))
-            
+
 # def pisagor():
 #     a = tuple()
 #     for i in range(1,101):
@@ -674,8 +659,6 @@
 
 # for i in range(2,101):
 #     print(prime(i))
-
-
 
 
 # explanation: "amanaplanacanalpanama"
@@ -718,14 +701,11 @@
 # file = open("E:/Udemy Python/ALLCODINGexercises/Next Level Modules/smtp_module_udemy.py","w")
 
 
-
-#********************
+# ********************
 # def are_you_playing_banjo(name):
 #     return name + (' plays' if name[0].lower() == "r" else ' does not play') + ' banjo'
 
 # print(are_you_playing_banjo("Rickie"))
-
-
 
 
 # def check(seq,elem):
@@ -734,16 +714,10 @@
 # print(check([1,23,3,4,5,6,"ali"],'ali'))
 
 
-
-
 # def string_to_array(s):
 #     return s.split(" ")
 
 # print(string_to_array("I love arrays they are my favorite"))
-
-
-
-
 
 
 # toplam= 0
@@ -752,10 +726,6 @@
 #     toplam += i
 #     i += 1
 # print(toplam)
-
-
-
-
 
 
 # a = 1
@@ -775,12 +745,9 @@
 # print(liste2)
 
 
-
-# import sys 
+# import sys
 # max_val = sys.maxsize
 # print(max_val)
-
-
 
 
 # a = 'pyton is the best programming language ever!'
@@ -818,12 +785,9 @@
 # fonk(2)
 
 
-
 # dict1 = {'color': 'blue', 'shape': 'square', 'volume':40}
 # for i,j in dict1.items():
 #     print(i,j)
-
-
 
 
 # def our_decorator(func):
@@ -838,8 +802,6 @@
 #     print("Hi, foo has been called with " + str(x))
 
 # foo('sie')
-
-
 
 
 # def reverse_words(text):
@@ -875,7 +837,7 @@
 #             tot+=j
 #     if i == tot:
 #         print(i)
-        
+
 
 # def randomdigits():
 #     import random
@@ -892,7 +854,7 @@
 #             return i
 #     else:
 #         return False
-    
+
 # print(chklen(*randomdigits()))
 
 # def chklen(*args):
@@ -905,18 +867,6 @@
 #     newlist = [i if len(str(i))==16 else False for i in digits]
 #     return next(iter(newlist))
 # print(chklen(*randomdigits()))
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # from flask import Flask
@@ -932,7 +882,7 @@
 #             for j in range(i + 1, len(nums)):
 #                 if nums[j] == target - nums[i]:
 #                     return [i, j]
-                
+
 # liste = Solution()
 # f=[1,2,3,4,5]
 # print(liste.twoSum(f,5))
@@ -952,7 +902,7 @@
 # #         for i in range(len(nums)):
 # #             complement = target - nums[i]
 # #             if complement in hashmap and hashmap[complement] != i:
-# #                 return [i, hashmap[complement]] 
+# #                 return [i, hashmap[complement]]
 # print(twoSum(nums,target))
 
 # nums = [1,2,3,4,5,6]
@@ -976,7 +926,7 @@
 # s = "AdfajkflaA"
 # print(list(enumerate(s)))
 
-# import os 
+# import os
 # newpath = "e:\\udemy python\\2.level\\templates"
 # if not os.path.exists(newpath):
 #     os.makedirs(newpath)
@@ -1036,10 +986,8 @@
 # print(a)
 
 
-
 # greet = "hello",
 # print(len(greet))
-
 
 
 # a = "hello"
@@ -1080,7 +1028,6 @@
 # print(f"welcome {name}")
 
 
-
 # l = [1,2,3,4,5]
 # l.reverse()
 # print(l)
@@ -1094,7 +1041,7 @@
 
 # liste = [1,2,3,4,5]
 # liste1 = [liste.pop() for i in range(len(liste))]
-# print(liste,liste1, sep = "\n") 
+# print(liste,liste1, sep = "\n")
 
 # def concatenate(**kwargs):
 #     res = ""
@@ -1103,7 +1050,6 @@
 #     return res
 
 # print(concatenate({"a":"python", "b":"real"}))
-
 
 
 # files = {
@@ -1175,7 +1121,7 @@
 #     return res
 #   else:
 #     print("Sonuc: ",res)
-  
+
 #     return res+10
 # print(f(4))
 
@@ -1190,7 +1136,6 @@
 # help(f)
 
 
-
 # def consecutive(n):
 #     """verilen n degerini n degeride dahil olmak uzere
 #     yanyana bosluksuz dizip print eder.
@@ -1199,8 +1144,8 @@
 #         n (int): range degerinde son aralik(inc)
 #     """
 #     print(*range(1,(n+1)),sep="")
-    
-# consecutive(12) 
+
+# consecutive(12)
 
 
 # st = """In a factory a printer prints labels for boxes. For one kind of boxes the printer has to use colors which, for the sake of simplicity, are named with letters from a to m.
@@ -1234,7 +1179,7 @@
 # a =[1,23,5,5,"essealmi"]
 # for i in a:
 #     if isinstance(i,(str)):
-#         b = *i, 
+#         b = *i,
 # print(b)
 
 
@@ -1266,7 +1211,6 @@
 # b = input("isim girin")
 # assert isinstance(b,int), "b string"
 # print(b*12)
-
 
 
 # mailler={"kisi1":"ad1.soyad1@gmail.com","kisi2":"ad2.soyad2@gmail.com","kisi3":"ad3.soyad3@gmail.com"}
@@ -1365,7 +1309,7 @@
 # print("cilek".encode("cp1254"))
 #########
 
-#Perfect
+# Perfect
 
 # def isPerfect(x):
 #     """Sayiyi boldugunde sifir kalani veren kendine kadar olan sayilarin toplami eger sayinin kendine esitse bu fonksiyon True doner
@@ -1379,7 +1323,7 @@
 #     tot = 0
 #     for i in range(1,x):
 #         if x % i == 0:
-#             tot += i 
+#             tot += i
 #     if tot == x:
 #         return(f"{x} is a Perfect Number")
 #     return (f"{x} is not a Perfect Number")
@@ -1462,7 +1406,7 @@
 #     for i in b:
 #         if i not in a:
 #             raise Exception("missing word")
-    
+
 #     print("Shuffled list is:",a)
 # print(b)
 
@@ -1480,7 +1424,7 @@
 
 # hi()
 
-#######################CLOSURE
+# CLOSURE
 # def outer():
 #     msg = "hello world!" ## enclosing scope
 #     def inner():
@@ -1550,7 +1494,7 @@
 
 #############################
 # def is_prime(x):
-#     """prime number finder 
+#     """prime number finder
 
 #     Args:
 #         x (list): returns list of prime number back
@@ -1574,7 +1518,6 @@
 # print(rect_area(ls))
 # ls = [(3,4),(10,3),(5,6),(1,9)]
 # print(list(map(lambda x : x[0]*x[1], ls)))
-
 
 
 # files = {
@@ -1615,8 +1558,8 @@ for i,j,k in itertools.zip_longest(num,color,value): # stops when all lists are 
 
 for i,j,k in itertools.zip_longest(num,value,color,fillvalue=-4444):# instead of None there will be fillvalue
     print(i,j,k) # will return 1 255 red; 2 256 white; 3 -4444 black '''
-    
-    
+
+
 # lst = [1,2,3,4,'a',"bc"]
 # a = enumerate(lst,1)
 # i = iter(a)
@@ -1634,4 +1577,39 @@ for i in dir():
     del globals()[i]
 del i
 print(dir())
+'''
+# print('int','bin','len_bin',sep='\t')
+# print('-'*len('int'),len('bin')*'-','-'*len('len_bin'),sep='\t')
+# for i in range(11):
+#     print(i,bin(i)[2:],len(bin(i)[2:]),sep='\t' )
+
+# Decorator ex to understand local variable is accessible from global which defined in function
+''' def changer(func):
+    def wrapper(arg):
+        func(arg)
+        b = arg
+        print(b)
+    return wrapper
+
+@changer
+def func(arg):
+    a= arg
+    print(a)
+    return a 
+
+func(123)
+print('outside')
+'''
+
+''' import requests
+from bs4 import BeautifulSoup
+response = requests.get(r"https://www.trendyol.com/")
+
+soup = BeautifulSoup(response.content, 'html.parser')
+
+links = soup.find_all('a')
+
+for link in links:
+    print(link.get("href"))
  '''
+ 
