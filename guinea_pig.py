@@ -1612,4 +1612,22 @@ links = soup.find_all('a')
 for link in links:
     print(link.get("href"))
  '''
- 
+
+
+# with open("/home/alice/Desktop/yazbel.pdf", "rb+") as file:
+#     v = file.read()
+# producer_index = v.index(b'/Producer')
+# print(v[producer_index:producer_index+50])
+# print(v[producer_index])
+
+
+# with open("/home/alice/Desktop/The Pragmatic Programmer Your Journey to Mastery, 20th Anniversary Edition by Andrew Hunt David Hurst Thomas.pdf", "rb+") as file:
+#     read = file.read()
+
+# prod_index = read.index(b'/Producer')
+# print(read[prod_index:prod_index+500])
+
+
+# s = "ali cem koyun"
+# print(s.index('cem'))
+
