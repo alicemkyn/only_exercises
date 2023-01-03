@@ -1631,3 +1631,29 @@ for link in links:
 # s = "ali cem koyun"
 # print(s.index('cem'))
 
+# l = [1,2,3,4,5]
+# l[:3]=2
+# print(*l)
+
+''' def multiply(*args):
+    global res
+    res=1
+    for i in args:
+        res *= i
+    print(res)
+multiply(1,2,3,4)
+print(dir()) '''
+
+
+# print(*'TBMM', sep='.',end='.')
+# import random
+
+# def gener(start = 0, finish = 500, qty = 10):
+#     number = set()
+
+#     while len(number) < qty:
+#         number.add(random.randrange(start,finish))
+#     return number
+
+# print(gener(5,144,10))
+# print(len(gener(5,200,10)))
