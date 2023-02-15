@@ -1559,7 +1559,6 @@ for i,j,k in itertools.zip_longest(num,color,value): # stops when all lists are 
 for i,j,k in itertools.zip_longest(num,value,color,fillvalue=-4444):# instead of None there will be fillvalue
     print(i,j,k) # will return 1 255 red; 2 256 white; 3 -4444 black '''
 
-
 # lst = [1,2,3,4,'a',"bc"]
 # a = enumerate(lst,1)
 # i = iter(a)
@@ -1611,8 +1610,7 @@ links = soup.find_all('a')
 
 for link in links:
     print(link.get("href"))
- '''
-
+'''
 
 # with open("/home/alice/Desktop/yazbel.pdf", "rb+") as file:
 #     v = file.read()
@@ -1644,7 +1642,6 @@ for link in links:
 multiply(1,2,3,4)
 print(dir()) '''
 
-
 # print(*'TBMM', sep='.',end='.')
 # import random
 
@@ -1656,4 +1653,441 @@ print(dir()) '''
 #     return number
 
 # print(gener(5,144,10))
-# print(len(gener(5,200,10)))
+# print(len(gener(5,200,10))
+
+
+# write a function that shows the prime numbers of list in range 0,1000
+
+''' def prime_numbers(n):
+    prime_list = []
+    for num in range(2, n+1):
+        is_prime = True
+        for i in range(2, num):
+            if (num % i == 0):
+                is_prime = False
+        if is_prime:
+            prime_list.append(num)
+
+    return prime_list
+
+
+print(prime_numbers(1000))
+'''
+# for i in range(10):
+#     if i == 5:
+#         continue
+#     print(i)
+
+
+# print('selam\r\nas')
+
+
+# a = int(input('sayi'))
+# if a == 5:
+#     raise 'what kinda error is that???'
+#     print(asdf)
+
+
+# byte = bytes('alicem', 'utf8')
+# print(byte)
+# st = str(byte, encoding='utf-8')
+# print(st)
+
+
+# import os
+# print(callable(os.getcwd))
+
+# lis = ['a', "bac"]
+# print(lis)
+
+# l = [i for i in range(10) if i/2 in (2,3,4)]
+# print(l)
+
+
+# print([i for i in range(10)if i%2 in (0,1)] == [i for i in range(10)])
+
+# x = 123
+# print(globals()['x'])
+# globals().clear()
+# print(globals())
+
+
+# l = [*range(100), set('alicem'), {i: len(i) for i in ['alicem', 'koyun', 'deneme', "123"]}, frozenset('anutforajaroftuna')]
+# print(l[:10:-1])
+
+# print([*range(10)][-3:2:-1])
+
+
+# l = [i if i % 2 != 0 else i % 2 == 1 for i in range(11)]
+# print(l)
+
+
+# for i in range(10):
+#     if i % 2 == 1:
+#         print([j for j in range(11)][::i])
+
+
+''' 
+import time
+
+start = time.time()
+for i in range(-1000,1000):
+    for j in range(-1000,1000):
+        if i is j:
+            print(i)
+print(time.time() - start)    # execution time 0.289991222
+'''
+
+''' import time
+
+def gen(min,max):
+    for i in range(min,max):
+        yield i
+        
+start = time.time()
+for i in range(-1000,1000):
+    for j in gen(-1000,1000):
+        if i is j:
+            print(j)
+print(time.time()-start) # exec time 0.357785224914 '''
+
+# import random
+# l = [random.randint(1,500) for _ in range(20)] # _ convention olsun diye bunu koyduk.
+# print(l)
+
+
+''' import random
+l = [random.randint(1,1000) for _ in range(random.randrange(10,30))]
+def tek(x):
+    return x % 2 == 1
+print('{} ogeden {} tanesi cift {} tanesi tek'.format(len(l),len(l)-len(list((filter(tek,l)))),len(list(filter(tek,l)))))
+print('tek olanlar',*filter(tek,l)) '''
+
+# import requests
+# baseURL = 'https://swapi.dev/api/'
+# get = requests.get(baseURL+'films/1/')
+
+# dic = get.json()
+
+# print(dic['title'])
+
+
+# l = [1, 2, 3]
+
+
+# def deneme(numara):
+#     for i in l:
+#         print(i * numara)
+
+
+# print(deneme(2))
+
+# # print(*map(lambda x:2*x,l))
+# map(lambda x: x**2, l)
+
+
+# d = {"dil": "language", "masa": "table",
+#      "bilgisayar": "computer", "a": 1, "b": 2, "c": 3}
+
+# a = list(d.values())
+# b = list(d.keys())
+
+# # if c:= input("deger girin") in a :
+# #     print(b[a.index(c)])
+
+# # sorgu = input("Gir")
+
+# if sorgu := input("gir") in a:
+#     print(b[a.index(sorgu)])
+# print(sorgu)
+
+
+# if walrus:=input("deneme"):
+#     print(walrus)
+
+
+# import inspect ## this module show the placeholders and their default values of functions
+
+# print(inspect.signature(open)))
+
+# print(5^3)
+
+
+''' # sorted builtin function by key param
+alp = "abcdefghijklmnoprstvwqxyz"
+dct = {i: alp.index(i) for i in alp}
+
+def sirala(kelime):
+    return ([dct.get(kelime[i]) for i in range(len(kelime))])
+
+#Example:
+isimler = ["ahmet","mehmet","salih","alicem","koyun","metin zeki candan","michael schumacher"]
+
+print(*sorted(isimler,key=sirala),sep="\n")
+'''
+
+# st, ls, dct, tup, stt = "alicem", [*"alicem"], dict.fromkeys(
+#     (i for i in range(100)), "koyun"), (i for i in range(100)), {*"alicemkoyun"}
+# print(isinstance(st, list)) #False
+# print(isinstance(dct,dict)) #True
+
+# print(vars(str))
+
+
+# func = lambda x,y : x+y
+
+# print(func(1,2))
+
+
+# l = [1, 2, 3, 4, 5, 6]
+
+# print(l[len(l)-1:])
+
+
+# # Recursive Function Example
+# n = 0
+# def decrease(s):
+#     global n
+#     if len(s) < 1:
+#         return s
+#     else:
+#         n+=1
+#         print(list(s))
+#         return decrease(s[1:])
+
+
+# print(decrease("alicem"))
+
+
+''' def decrease2(s):
+    if len(s) < 1 or len(s) == 0:
+        return s
+    else:
+        print(f"surec baslarken s:{s}")
+        decrease2(s[1:])
+        print(f"surec bittikten sonra s:{s}")
+
+print(decrease2("alicem"))
+'''
+
+
+# import random
+#
+# for i in range(5):
+#     l = [random.randint(random.randint(1, 1000), random.randint(1000, 5000)) \
+#          for _ in range(random.randrange(1, 10), random.randrange(10, 20))]
+#     print(*filter(lambda x: x % 2 == 0, l))
+
+# def recursion(x):
+#     if x == 0:
+#         return x
+#     else:
+#         z = x+ recursion(x-1)
+#     print(x)
+#     return z
+#
+# print(recursion(500))
+
+
+# def recursion(s):
+#     if len(s) < 1:
+#         return s
+#     else:
+#         print("before {}".format(s))
+#         recursion(s[1:])
+#         print(f"after {s}")
+#
+# recursion("anutforajaroftuna")
+
+# ran = range(1,100)
+# l = list(ran)
+# l =(i if round(i/2)%2 == 0 else None for i in l )
+# print("l = ",l)
+# a,b,c,*d,e,f = l
+# print(a,b,c,d,e,f, sep='\n')
+
+# def ters(s):
+#     if len(s) < 1:
+#         return s
+#     else:
+#         return ters(s[1:]) + s[0]
+#
+#
+# kelime = input("Ters kelime:\t")
+# print("Girilen kelimenin tersi '{}'".format(ters(kelime)))
+#
+
+# def yazici():
+#     a = 'deneme1'
+#     print(a)
+#     def yaz(msg):
+#         nonlocal a
+#         a = 'deneme2'
+#         print(a)
+#         def ciz(*args):
+#             nonlocal a
+#             a = 'deneme3'
+#             print(a)
+#         return ciz
+#
+#     return yaz
+#
+#
+# yazici()('yazi tetikledi')('cizi tetikledi')
+
+
+# def msg(msg):
+#     msg = msg
+#     print(msg)
+
+# def func(msg):
+#     def inner(sth):
+#         print(msg+' Dunya')
+#     return inner(msg)
+# func('merhaba')
+
+# a = 123
+# def func():
+#
+#     global a
+#     print(a)
+#     a = 555
+#     print(a)
+#     def func2():
+#         a = 75
+#         print(a)
+#     return func2()
+# func()
+
+
+# def banjo(name):
+#     return name + (' plays' if name[0].lower() == 'r' else ' doesnt play') + ' banjo'
+#
+# print(banjo('Ricardo'))
+
+# def outer(name):
+#     def inner(surname):
+#         print(surname, "Inner Func Worked")
+#     return inner(name)
+#
+# print(outer('alicem')('koyun'))
+
+
+# # Changing func name using variables
+# def func(name='alicem'):
+#     return name + f" Welcome, There are {len(name)} letter in your name"
+#
+#
+# print(func(name=input("isim gir")))
+
+
+# def topla(sayi):
+#     if len(sayi) < 1:
+#         return 0
+#     else:
+#         ilk, son = sayi[0], sayi[1:]
+#         return ilk + topla(son)
+#
+#
+# l = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.11, 12]
+#
+# print(topla(l))
+
+
+# # Flattening a list with recursion v_1
+# def list_flatter(lst):
+#     flattened_list = []
+#     for element in lst:
+#         if isinstance(element,list):
+#             flattened_list.extend(list_flatter(element))
+#         else:
+#             flattened_list.append(element)
+#     return flattened_list
+#
+# nested_list = [[1, 2, [3, 4]], [5, 6], 7, [8, [9, 10],[1]]]
+# print(list_flatter(nested_list))
+#
+
+# l = [1,2,3]
+# l.extend((1,))
+# print(l)
+
+
+# def ekle(*args):
+#     eklenen = 0
+#     for i in args:
+#         eklenen += i
+#
+#     def bol(x, y):
+#         nonlocal eklenen
+#         eklenen += (x / y)
+#         return eklenen
+#     return bol
+#
+#
+# a = ekle(1, 2, 3, 4)
+# print(a(5,3))
+
+
+# l = [*range(1_000_000)]
+# def is_prime(x):
+#     if x < 2:
+#         return False
+#     for i in range(2, int(x ** 0.5) + 1):
+#         if x % i == 0:
+#             return False
+#
+#     return True
+#
+# def fillist (lst):
+#     return list(filter(is_prime, lst))
+#
+# print(fillist(l))
+
+
+# Fibonacci Series
+# a =1
+# b = 0
+# for i in range(100):
+#     a,b = b,a+b
+#     print(a,b)
+
+
+# def fibo_generator(treshold):
+#     a = 1
+#     b = 0
+#     while b < treshold:
+#         a, b = b, a + b
+#         yield b
+#
+#
+# # gen = fibo_generator
+# # for i in gen(100):
+# #     print(i)
+# #Or
+#
+# iter_gen = iter(fibo_generator(100))
+# print(next(iter_gen))
+
+
+# def deneme(x):
+#     print(x)
+
+#     def deneme(x):
+#         print(x)
+#         deneme(x)
+#     deneme(x)
+
+# deneme('123')
+
+
+# deneme: int = input('>>')
+# print(type(deneme))
+
+
+
+
+# arr = [1, 2, 3, 4, 1, 2, 3, 4]
+# dc = dict.fromkeys(arr)
+# print(dc, type(dc))
+# print(list(dc))
